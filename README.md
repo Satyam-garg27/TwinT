@@ -74,7 +74,7 @@ twint/
 
 ## 📋 Documentation
 
-See [`docs/SRS_TwinT.md`](docs/SRS_TwinT.md) for the Software Requirements Specification.
+See [`docs/SRS_TwinT.md`](Docs/SRS_TwinT.md) for the Software Requirements Specification.
 
 ## 🧪 Current Status
 
