@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwinT — Just Two</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7/bundles/stomp.umd.min.js"></script>
+</head>
+<body>
+    <main class="app">
+        <header class="topbar">
+            <div class="brand"><span class="logo">T</span> TwinT</div>
+            <span class="status" id="status">Offline</span>
+        </header>
+
+        <section id="login" class="login">
+            <div class="orb">✦</div>
+            <p class="eyebrow">A SPACE FOR TWO</p>
+            <h1>Less noise.<br><span>More connection.</span></h1>
+            <p class="muted">A private-feeling little corner for two people.</p>
+            <form id="joinForm">
+                <input id="username" maxlength="20" placeholder="Choose a username"
+                       autocomplete="nickname" required>
+                <button type="submit">Enter TwinT <span>→</span></button>
+            </form>
+            <p class="footnote">Two participants. One conversation.</p>
+        </section>
+
+        <section id="chat" class="chat hidden">
+            <div class="chat-heading">
+                <div>
+                    <p class="eyebrow">YOUR CONVERSATION</p>
+                    <h2>The little room <span>✦</span></h2>
+                </div>
+                <button id="leaveBtn" class="leave">Leave</button>
+            </div>
+
+            <div id="messages" class="messages">
+                <div class="empty">Your conversation starts here ✨</div>
+            </div>
+
+            <form id="messageForm" class="composer">
+                <input id="messageInput" maxlength="1000"
+                       placeholder="Write something..." autocomplete="off" required>
+                <button type="submit" aria-label="Send message">↑</button>
+            </form>
+            <p class="footnote">Be kind. You're talking to a real person.</p>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>
